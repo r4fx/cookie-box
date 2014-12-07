@@ -5,14 +5,12 @@ Dzięki wykorzystaniu `localStorage` (HTML5), plugin do działania nie potrzbuje
 Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny komunikat.
 
 ## Ostatnie zmiany
-***
 
 * [22.05.2014] 
     - Nowa opcja - pozycjonowanie okienka góra/dół
     - Refactoring kodu
 
 ## Szybki start
-***
 
 1. Pobierz źródło wtyczki -> [cookie-box.zip](http://gitlab.thedigitals.pl/rafal.brzeski/cookie-box/repository/archive.zip?ref=master)
 2. Sprawdź działanie w katalogu `Demo`
@@ -34,7 +32,6 @@ Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny ko
 6. Jeśli trzeba przestyluj wygląd na potrzeby twojego projektu
 
 ## Features
-***
 
 * Łatwa możliwość zmiany tekstu informacyjnego
 * Możliwość wpiecia dowolnego linku do podstrony z dodatkowymi informacjami o cookies
@@ -46,7 +43,6 @@ Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny ko
 * możliwość ustawienia góra/dół
 
 ## Dokumentacja
-***
 
 ### Ustawienia
 
