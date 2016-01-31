@@ -1,10 +1,18 @@
 # jQuery Cookie Box
 
 Okienko z informacją o wykorzystywaniu plików cookies na stronie. 
-Dzięki wykorzystaniu `localStorage` (HTML5), plugin do działania nie potrzbuje wtyczki jQuery Cookies.
+Dzięki wykorzystaniu `localStorage` (HTML5), plugin do działania nie potrzbuje wtyczki do obsługi Cookies.
 Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny komunikat.
+Możesz też wskazać włąsny kontener w którym powinien wygenerować się kod.
+Skrypt nie potrzbuje do działania jQuery.
 
 ## Ostatnie zmiany
+
+* [31.01.2016]
+    - Przebudowa wtyczki na  vanilla js
+    - Refactoring kodu
+    - Usunięcie zbędnych funkcjji
+    - Dodanie opcji własnego kontenera 'selfPosition'
 
 * [22.05.2014] 
     - Nowa opcja - pozycjonowanie okienka góra/dół
