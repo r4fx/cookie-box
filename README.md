@@ -12,7 +12,7 @@ Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny ko
 
 ## Szybki start
 
-1. Pobierz źródło wtyczki -> [cookie-box.zip](http://gitlab.thedigitals.pl/rafal.brzeski/cookie-box/repository/archive.zip?ref=master)
+1. Pobierz źródło wtyczki -> [master.zip](https://github.com/r4fx/cookie-box/archive/master.zip)
 2. Sprawdź działanie w katalogu `Demo`
 3. Obsadź na stronie skrypt `cookiebox.js
 4. Obsadź style `cookiebox.css`
