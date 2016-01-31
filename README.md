@@ -1,4 +1,4 @@
-# jQuery Cookie Box
+# jQuery free Cookie Box
 
 Okienko z informacją o wykorzystywaniu plików cookies na stronie. 
 Dzięki wykorzystaniu `localStorage` (HTML5), plugin do działania nie potrzbuje wtyczki do obsługi Cookies.
