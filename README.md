@@ -14,19 +14,21 @@ Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny ko
 
 1. Pobierz źródło wtyczki -> [cookie-box.zip](http://gitlab.thedigitals.pl/rafal.brzeski/cookie-box/repository/archive.zip?ref=master)
 2. Sprawdź działanie w katalogu `Demo`
-3. Obsadź na stronie skrypt `jquery.cookiebox.js` (wymagane jQuery)
+3. Obsadź na stronie skrypt `cookiebox.js
 4. Obsadź style `cookiebox.css`
-5. Uruchom w stronie skrypt, np.
+5. Uruchom w stronie skrypt, np na końcu body
 
     ```javascript
-     $(document).ready(function () {
-        $.cookieBox({
+    <script>
+        var cookieBox = new cookieBox({
             privacyPolicy: true,
-            textParagraph_1: '<p>Ta witryna używa <a class="cookieBoxUrl">plików cookie</a> m. in. w celach statystycznych.</p>',
-            textParagraph_2: '',
-            animation: true
+            selfPosition: false,
+            cookiesPageURL: '/polityka-plikow-cookies/',
+            textParagraph_1: '<p>Strona używa plików cookies.</p>',
+            textParagraph_2: '<p><a>Dowiedz się więcej</a> o celu ich używania i zmianie ustawień cookies w przeglądarce. Korzystając ze strony wyrażasz zgodę na używanie cookies.</p>',
+            position: 'bottom'
         });
-    });
+    </script>
     ```
     
 6. Jeśli trzeba przestyluj wygląd na potrzeby twojego projektu
@@ -39,7 +41,6 @@ Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny ko
 * SCSS
 * funkcja włącz/wyłącz
 * możliwość opóźnienia wyświetlenia
-* opcjonalna animacja (CSS), efekt wysunięcia z dołu (efekt widoczny przy zastosowaniu opóźnienia wyświetlenia)
 * możliwość ustawienia góra/dół
 
 ## Dokumentacja
@@ -53,6 +54,4 @@ Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny ko
 | `textParagraph_1` | Pierwszy paragraf z komunikatem | string | `'<p>Ta witryna używa <a class="cookieBoxUrl">plików cookie</a> m. in. w celach reklamowych i statystycznych oraz w celu dostosowania serwisu do indywidualnych potrzeb użytkowników. Korzystanie z naszego serwisu internetowego bez zmiany ustawień dotyczących cookie oznacza, że będą one zapisywane w pamięci urządzenia.</p>'` |
 | `textParagraph_2` | Opcjonalny drugi paragraf komunikatu | string | `'<p>Jeżeli wyrażasz zgodę na zapisywanie informacji zawartej w cookies zamknij ten komunikat. Jeżeli nie wyrażasz zgody - zmień ustawienia swojej przeglądarki.</p>'` | Opcjonalny drugi paragraf komunikatu |
 |`cookieBox`| Id kontenera z komunikatem | string | `'#cookieBox'` |
-|`delay`| Opóźnienie wyświetlenia okienka w ms| int | `0` |
-|`animation`| Animacja z wysunięciem okienka (animacja po stronie CSS) | boolean | `false` |
 |`position`| Pozycjonowanie boxu (dostępne opcje: bottom, top) | string | `bottom` |

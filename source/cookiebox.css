@@ -48,7 +48,7 @@
     -o-transition: color 200ms ease;
     transition: color 200ms ease; }
     .cookie-box__close-box:hover {
-      color: #fff; }
+      opacity: 0.7; }
     .cookie-box__close-box:before {
       content: '\00d7';
       height: 20px;

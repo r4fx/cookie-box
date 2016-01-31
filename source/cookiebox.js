@@ -13,7 +13,7 @@
         var defaults = {
             privacyPolicy: true,
             selfPosition: false,
-            cookieBox: '#cookie-box',
+            boxContainer: '#cookie-box',
             cookiesPageURL: '/polityka-plikow-cookies/',
             textParagraph_1: '<p>Ta witryna używa <a class="cookieBoxUrl">plików cookie</a> m. in. w celach reklamowych i statystycznych oraz w celu dostosowania serwisu do indywidualnych potrzeb użytkowników. Korzystanie z naszego serwisu internetowego bez zmiany ustawień dotyczących cookie oznacza, że będą one zapisywane w pamięci urządzenia.</p>',
             textParagraph_2: '<p>Jeżeli wyrażasz zgodę na zapisywanie informacji zawartej w cookies zamknij ten komunikat. Jeżeli nie wyrażasz zgody - zmień ustawienia swojej przeglądarki.</p>',
@@ -59,10 +59,10 @@
              *  Remove cookieBox container from source
              */
             function removeCookieBox() {
-                var cookieBox = document.querySelector(plugin.settings.cookieBox);
+                var boxContainer = document.querySelector(plugin.settings.boxContainer);
 
-                if (cookieBox) {
-                    cookieBox.parentNode.removeChild(cookieBox);
+                if (boxContainer) {
+                    boxContainer.parentNode.removeChild(boxContainer);
                 }
             }
 
@@ -72,7 +72,7 @@
             if (plugin.settings.privacyPolicy && !(cookieInTheBox)) {
 
                 var bodyTag = document.querySelector('body');
-                var cookieBoxHashFree = plugin.settings.cookieBox.replace("#", "");
+                var cookieBoxHashFree = plugin.settings.boxContainer.replace("#", "");
                 var cookieBoxElements = {
                     container: document.createElement('div'),
                     bodyWrapper: document.createElement('div'),
@@ -108,7 +108,7 @@
                 /**
                  *  if container is ready than generate content
                  */
-                var cookieBoxObject = document.querySelector(plugin.settings.cookieBox);
+                var cookieBoxObject = document.querySelector(plugin.settings.boxContainer);
 
                 if (cookieBoxObject) {
                     cookieBoxObject.appendChild(cookieBoxElements.bodyWrapper);
