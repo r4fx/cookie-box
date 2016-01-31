@@ -57,10 +57,10 @@ Skrypt nie potrzbuje do działania jQuery.
 
 | Opcja | Opis | Typ | Domyślna wartość |
 | -------- | -------- | -------- | -------- |
-| privacyPolicy | włącz/wyłącz | boolean | `true` |
-| selfPosition | Pozwala wykorzystać istniejący kontener, wstaw w dowolnym miejscu strony `<div id="cookie-box" class="cookie-box" data-cookie-box></div>`. | boolean | `true` |
-| cookiesPageURL | link do podstrony o cookies (działa na klasie `.cookieBoxUrl`) | string | `'/polityka-plikow-cookies/'` |
-| textParagraph_1 | Pierwszy paragraf z komunikatem | string | `'<p>Ta witryna używa <a class="cookieBoxUrl">plików cookie</a> m. in. w celach reklamowych i statystycznych oraz w celu dostosowania serwisu do indywidualnych potrzeb użytkowników. Korzystanie z naszego serwisu internetowego bez zmiany ustawień dotyczących cookie oznacza, że będą one zapisywane w pamięci urządzenia.</p>'` |
-| textParagraph_2 | Opcjonalny drugi paragraf komunikatu | string | `'<p>Jeżeli wyrażasz zgodę na zapisywanie informacji zawartej w cookies zamknij ten komunikat. Jeżeli nie wyrażasz zgody - zmień ustawienia swojej przeglądarki.</p>'` | Opcjonalny drugi paragraf komunikatu |
-| cookieBox| Id kontenera z komunikatem | string | `'#cookieBox'` |
-| position| Pozycjonowanie boxu (dostępne opcje: bottom, top) | string | `bottom` |
+| privacyPolicy | włącz/wyłącz | boolean | true |
+| selfPosition | Pozwala wykorzystać istniejący kontener, wstaw w dowolnym miejscu strony `<div id="cookie-box" class="cookie-box" data-cookie-box></div>`. | boolean | false |
+| cookiesPageURL | link do podstrony o cookies (działa na klasie `.cookieBoxUrl`) | string | '/polityka-plikow-cookies/' |
+| textParagraph_1 | Pierwszy paragraf z komunikatem | string | '<p>Ta witryna używa <a class="cookieBoxUrl">plików cookie</a> m. in. w celach reklamowych i statystycznych oraz w celu dostosowania serwisu do indywidualnych potrzeb użytkowników. Korzystanie z naszego serwisu internetowego bez zmiany ustawień dotyczących cookie oznacza, że będą one zapisywane w pamięci urządzenia.</p>' |
+| textParagraph_2 | Opcjonalny drugi paragraf komunikatu | string | '<p>Jeżeli wyrażasz zgodę na zapisywanie informacji zawartej w cookies zamknij ten komunikat. Jeżeli nie wyrażasz zgody - zmień ustawienia swojej przeglądarki.</p>' | Opcjonalny drugi paragraf komunikatu |
+| cookieBox| Id kontenera z komunikatem | string | '#cookie-box' |
+| position| Pozycjonowanie boxu (dostępne opcje: bottom, top) | string | bottom |
