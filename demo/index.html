@@ -1,28 +1,18 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-    <meta charset=utf-8>
-    <title>cookie box</title>
+    <meta charset="UTF-8">
+    <title>Cookie box demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
 
-    <link rel="stylesheet" href="../demo/css/style.css">
-    <link rel="stylesheet" href="../source/styles/css/cookiebox.css">
+    <link rel="stylesheet" href="../source/cookiebox.css">
+    <link rel="stylesheet" href="../demo/style.css">
 
-    <script src="vendor/jquery-2.1.0.min.js"></script>
-    <script src="../source/jquery.cookiebox.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $.cookieBox({
-                privacyPolicy: true,
-                cookiesPageURL: '/polityka-plikow-cookies/',
-                position: 'bottom'
-            });
-        });
-    </script>
+    <script src="../source/cookiebox.js"></script>
 </head>
 <body>
 
-    <main class="demo">
+    <main>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus
             est. At vero eos et accusam et justo duo dolores et ea rebum.. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
@@ -58,5 +48,16 @@
             consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
             consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
     </main>
+
+    <script>
+        var cookieBox = new cookieBox({
+            privacyPolicy: true,
+            selfPosition: false,
+            cookiesPageURL: '/polityka-plikow-cookies/',
+            textParagraph_1: '<p>Strona używa plików cookies.</p>',
+            textParagraph_2: '<p><a>Dowiedz się więcej</a> o celu ich używania i zmianie ustawień cookies w przeglądarce. Korzystając ze strony wyrażasz zgodę na używanie cookies.</p>',
+            position: 'bottom'
+        });
+    </script>
 </body>
 </html>

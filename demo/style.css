@@ -1,0 +1,34 @@
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  font-size: 1.6rem;
+  color: #444;
+  padding: 10px;
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+main, .cookie-box{
+  width: 1024px;
+}
+
+main{
+  margin: 20px auto 100px;
+}
+
+main p{
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1023px) {
+  main, .cookie-box {
+    width: 100%;
+  }
+}
