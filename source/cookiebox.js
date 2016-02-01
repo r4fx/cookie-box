@@ -83,7 +83,9 @@
                 cookieBoxElements.container.id = cookieBoxHashFree;
                 cookieBoxElements.container.className = cookieBoxHashFree + ' ' + cookieBoxHashFree + '--' + plugin.settings.position;
                 cookieBoxElements.container.dataset.cookieBox = '';
+
                 cookieBoxElements.closeBtn.className = cookieBoxHashFree + '__close-box';
+                cookieBoxElements.closeBtn.dataset.cookieBoxClose = '';
 
                 /**
                  *  Self mode cookie box container
@@ -113,18 +115,20 @@
                 if (cookieBoxObject) {
                     cookieBoxObject.appendChild(cookieBoxElements.bodyWrapper);
                     cookieBoxObject.children[0].innerHTML = cookieBoxElements.body;
-                    cookieBoxObject.querySelector('a').href = plugin.settings.cookiesPageURL;
+                    cookieBoxObject.querySelector('[data-cookie-box-url]').href = plugin.settings.cookiesPageURL;
                     cookieBoxObject.appendChild(cookieBoxElements.closeBtn);
+                    cookieBoxObject.querySelector('[data-cookie-box-close]').href = '' ? '' : '#';
 
                     // Hide and remove cookie box
-                    var closeBtn = cookieBoxObject.querySelector('.cookie-box__close-box');
-
-                    closeBtn.addEventListener('click', function () {
-                        localStorage.setItem('cookieIsInTheBox', 'true');
-                        cookieBoxObject.classList.add(cookieBoxHashFree + '--inactive');
-
-                        setTimeout(removeCookieBox, 300);
-                    });
+                    var closeBtn = cookieBoxObject.querySelectorAll('[data-cookie-box-close]');
+                    for (var i = 0; i < closeBtn.length; i++) {
+                        closeBtn[i].addEventListener('click', function (evt) {
+                            localStorage.setItem('cookieIsInTheBox', 'true');
+                            cookieBoxObject.classList.add(cookieBoxHashFree + '--inactive');
+                            setTimeout(removeCookieBox, 300);
+                            evt.preventDefault();
+                        }, false);
+                    }
                 }
             } else {
                 removeCookieBox();
