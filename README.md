@@ -1,4 +1,4 @@
-# Simple (but powerfull) box with information about cookies use on site.
+### Simple (but powerfull) box with information about cookies use on site.
 
 Okienko z informacją o wykorzystywaniu plików cookies na stronie. 
 Dzięki wykorzystaniu `localStorage` (HTML5), plugin do działania nie potrzbuje wtyczki do obsługi Cookies.
@@ -6,8 +6,11 @@ Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny ko
 Możesz też wskazać własny kontener w którym powinien wygenerować się kod.
 Skrypt nie potrzbuje do działania jQuery.
 
-## Ostatnie zmiany
+### Ostatnie zmiany
 
+* [17.04.2016]
+    - Uproszczenie kodu
+    
 * [31.01.2016]
     - Przebudowa wtyczki na  vanilla js
     - Refactoring kodu
@@ -18,7 +21,7 @@ Skrypt nie potrzbuje do działania jQuery.
     - Nowa opcja - pozycjonowanie okienka góra/dół
     - Refactoring kodu
 
-## Szybki start
+### Szybki start
 
 1. Pobierz źródło wtyczki -> [master.zip](https://github.com/r4fx/cookie-box/archive/master.zip)
 2. Sprawdź działanie w katalogu `Demo`
@@ -32,8 +35,6 @@ Skrypt nie potrzbuje do działania jQuery.
             privacyPolicy: true,
             selfPosition: false,
             cookiesPageURL: '/polityka-plikow-cookies/',
-            textParagraph_1: '<p>Strona używa plików cookies.</p>',
-            textParagraph_2: '<p><a>Dowiedz się więcej</a> o celu ich używania i zmianie ustawień cookies w przeglądarce. Korzystając ze strony wyrażasz zgodę na używanie cookies.</p>',
             position: 'bottom'
         });
     </script>
@@ -41,26 +42,24 @@ Skrypt nie potrzbuje do działania jQuery.
     
 6. Jeśli trzeba przestyluj wygląd na potrzeby twojego projektu
 
-## Możliwości
+### Możliwości
 
 * Łatwa możliwość zmiany tekstu informacyjnego
-* Możliwość wpiecia dowolnego linku do podstrony z dodatkowymi informacjami o cookies
+* Możliwość wpiecia dowolnego linku do podstrony z informacjami o polityce cookies
 * RWD
 * SCSS
 * funkcja włącz/wyłącz
-* możliwość opóźnienia wyświetlenia
-* możliwość ustawienia góra/dół
+* możliwość ustawienia pozycji góra/dół
 
-## Dokumentacja
+### Dokumentacja
 
-### Ustawienia
+#### Ustawienia
 
 | Opcja | Opis | Typ | Domyślna wartość |
 | -------- | -------- | -------- | -------- |
 | privacyPolicy | włącz/wyłącz | boolean | true |
 | selfPosition | Pozwala wykorzystać istniejący kontener, wstaw w dowolnym miejscu strony `<div id="cookie-box" class="cookie-box" data-cookie-box></div>`. | boolean | false |
 | cookiesPageURL | link do podstrony o cookies (działa na klasie `.cookieBoxUrl`) | string | /polityka-plikow-cookies/ |
-| textParagraph_1 | Pierwszy paragraf z komunikatem | string | <p>Ta witryna używa <a class="cookieBoxUrl">plików cookie</a> m. in. w celach reklamowych i statystycznych oraz w celu dostosowania serwisu do indywidualnych potrzeb użytkowników. Korzystanie z naszego serwisu internetowego bez zmiany ustawień dotyczących cookie oznacza, że będą one zapisywane w pamięci urządzenia.</p> |
-| textParagraph_2 | Opcjonalny drugi paragraf komunikatu | string | <p>Jeżeli wyrażasz zgodę na zapisywanie informacji zawartej w cookies zamknij ten komunikat. Jeżeli nie wyrażasz zgody - zmień ustawienia swojej przeglądarki.</p> | Opcjonalny drugi paragraf komunikatu |
+| textMessage | Treść komunikatu | string | <p>Strona używa plików cookies. <a data-cookie-box-url>Dowiedz się więcej</a> o celu ich używania i zmianie ustawień cookies w przeglądarce. Korzystając ze strony wyrażasz zgodę na używanie cookies. <a data-cookie-box-close>Rozumiem</a>.</p> |
 | boxContainer| Id kontenera z komunikatem | string | #cookie-box |
 | position| Pozycjonowanie boxu (dostępne opcje: bottom, top) | string | bottom |
