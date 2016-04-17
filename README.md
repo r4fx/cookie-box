@@ -1,4 +1,4 @@
-### Simple (but powerful) box with information about cookies using on the site
+### Simple (but powerful) box with information about cookies using on the site.
 
 Okienko z informacją o wykorzystywaniu plików cookies na stronie. 
 Dzięki wykorzystaniu `localStorage` (HTML5), plugin do działania nie potrzbuje wtyczki do obsługi Cookies.
@@ -6,7 +6,7 @@ Skrypt generuje dynamiczny kod html na końcu `BODY` tylko gdy jest potrzebny ko
 Możesz też wskazać własny kontener w którym powinien wygenerować się kod.
 Skrypt nie potrzbuje do działania jQuery.
 
-### Ostatnie zmiany
+#### Ostatnie zmiany
 
 * [17.04.2016]
     - Uproszczenie kodu
@@ -21,7 +21,7 @@ Skrypt nie potrzbuje do działania jQuery.
     - Nowa opcja - pozycjonowanie okienka góra/dół
     - Refactoring kodu
 
-### Szybki start
+#### Szybki start
 
 1. Pobierz źródło wtyczki -> [master.zip](https://github.com/r4fx/cookie-box/archive/master.zip)
 2. Sprawdź działanie w katalogu `Demo`
@@ -42,7 +42,7 @@ Skrypt nie potrzbuje do działania jQuery.
     
 6. Jeśli trzeba przestyluj wygląd na potrzeby twojego projektu
 
-### Możliwości
+#### Możliwości
 
 * Łatwa możliwość zmiany tekstu informacyjnego
 * Możliwość wpiecia dowolnego linku do podstrony z informacjami o polityce cookies
@@ -51,9 +51,9 @@ Skrypt nie potrzbuje do działania jQuery.
 * funkcja włącz/wyłącz
 * możliwość ustawienia pozycji góra/dół
 
-### Dokumentacja
+#### Dokumentacja
 
-#### Ustawienia
+##### Ustawienia
 
 | Opcja | Opis | Typ | Domyślna wartość |
 | -------- | -------- | -------- | -------- |
