@@ -15,8 +15,7 @@
             selfPosition: false,
             boxContainer: '#cookie-box',
             cookiesPageURL: '/polityka-plikow-cookies/',
-            textParagraph_1: '<p>Ta witryna używa <a>plików cookie</a> m. in. w celach reklamowych i statystycznych oraz w celu dostosowania serwisu do indywidualnych potrzeb użytkowników. Korzystanie z naszego serwisu internetowego bez zmiany ustawień dotyczących cookie oznacza, że będą one zapisywane w pamięci urządzenia.</p>',
-            textParagraph_2: '<p>Jeżeli wyrażasz zgodę na zapisywanie informacji zawartej w cookies zamknij ten komunikat. Jeżeli nie wyrażasz zgody - zmień ustawienia swojej przeglądarki.</p>',
+            textParagraph: '<p>Strona używa plików cookies. <a data-cookie-box-url>Dowiedz się więcej</a> o celu ich używania i zmianie ustawień cookies w przeglądarce. Korzystając ze strony wyrażasz zgodę na używanie cookies. <a data-cookie-box-close>Rozumiem</a>.</p>',
             position: 'bottom'
         };
 
@@ -77,7 +76,7 @@
                     container: document.createElement('div'),
                     bodyWrapper: document.createElement('div'),
                     closeBtn: document.createElement('span'),
-                    body: plugin.settings.textParagraph_1 + plugin.settings.textParagraph_2
+                    body: plugin.settings.textParagraph
                 };
 
                 cookieBoxElements.container.id = cookieBoxHashFree;
