@@ -1,4 +1,4 @@
-### Simple (but powerfull) box with information about cookies use on site.
+### Simple (but powerful) box with information about cookies using on the site
 
 Okienko z informacją o wykorzystywaniu plików cookies na stronie. 
 Dzięki wykorzystaniu `localStorage` (HTML5), plugin do działania nie potrzbuje wtyczki do obsługi Cookies.
