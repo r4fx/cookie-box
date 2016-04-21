@@ -89,13 +89,13 @@
                 /**
                  *  Self mode cookie box container
                  */
-                var checkContainer = document.querySelector('[data-cookie-box]');
+                var checkContainer = document.querySelector(plugin.settings.boxContainer);
 
                 if (plugin.settings.selfPosition && !checkContainer) {
-                    console.error('CookieBox message: "selfPosition" option is set, please add "#cookie-box" element to document or unset "selfPosition".');
+                    console.error('CookieBox message: "selfPosition" option is set, please add an element with id "' + plugin.settings.boxContainer + '" to document or unset "selfPosition".');
                     return false;
                 } else if (!plugin.settings.selfPosition && checkContainer) {
-                    console.error('CookieBox message: Please set "selfPosition" option or remove "#cookie-box" element.');
+                    console.error('CookieBox message: Please set "selfPosition" option or remove element with id "' + plugin.settings.boxContainer + '".');
                     return false;
                 }
 
