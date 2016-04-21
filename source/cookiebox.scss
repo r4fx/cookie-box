@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-.cookie-box {
+#cookie-box {
   width: 100%;
   position: relative;
   z-index: 700;
@@ -18,7 +18,7 @@
   transform: translateX(-50%);
   left: 50%;
 
-  &--inactive {
+  .cookie-box--inactive {
     opacity: 0;
     max-height: 0;
   }
@@ -50,7 +50,7 @@
     text-decoration: underline;
   }
 
-  &__close-box {
+  .cookie-box__close-box {
     color: inherit;
     display: inline-block;
     position: absolute;

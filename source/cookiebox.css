@@ -1,4 +1,4 @@
-.cookie-box {
+#cookie-box {
   width: 100%;
   position: relative;
   z-index: 700;
@@ -15,23 +15,23 @@
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   left: 50%; }
-  .cookie-box--inactive {
+  #cookie-box .cookie-box--inactive {
     opacity: 0;
     max-height: 0; }
-  .cookie-box.cookie-box--bottom, .cookie-box.cookie-box--top {
+  #cookie-box.cookie-box--bottom, #cookie-box.cookie-box--top {
     background-color: #fff;
     position: fixed; }
-  .cookie-box.cookie-box--bottom {
+  #cookie-box.cookie-box--bottom {
     bottom: 0; }
-    .cookie-box.cookie-box--bottom.cookie-box--inactive {
+    #cookie-box.cookie-box--bottom.cookie-box--inactive {
       bottom: -100%; }
-  .cookie-box.cookie-box--top {
+  #cookie-box.cookie-box--top {
     top: 0; }
-    .cookie-box.cookie-box--top.cookie-box--inactive {
+    #cookie-box.cookie-box--top.cookie-box--inactive {
       top: -100%; }
-  .cookie-box a {
+  #cookie-box a {
     text-decoration: underline; }
-  .cookie-box__close-box {
+  #cookie-box .cookie-box__close-box {
     color: inherit;
     display: inline-block;
     position: absolute;
@@ -47,9 +47,9 @@
     -moz-transition: color 200ms ease;
     -o-transition: color 200ms ease;
     transition: color 200ms ease; }
-    .cookie-box__close-box:hover {
+    #cookie-box .cookie-box__close-box:hover {
       opacity: 0.7; }
-    .cookie-box__close-box:before {
+    #cookie-box .cookie-box__close-box:before {
       content: '\00d7';
       height: 20px;
       width: 20px;
@@ -59,12 +59,12 @@
       line-height: 20px;
       font-size: 2em;
       font-family: Palatino, serif; }
-  .cookie-box > div h4 {
+  #cookie-box > div h4 {
     color: #3c3c3c; }
-  .cookie-box > div p {
+  #cookie-box > div p {
     margin: 0 0 5px;
     text-align: left; }
-    .cookie-box > div p:last-child {
+    #cookie-box > div p:last-child {
       margin-bottom: 0; }
 
 /*# sourceMappingURL=cookiebox.css.map */
