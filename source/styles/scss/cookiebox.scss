@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #cookie-box {
-  width: 100%;
+  max-width: 100%;
   position: relative;
   z-index: 700;
   font-family: arial, sans-serif;
@@ -17,6 +17,10 @@
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   left: 50%;
+
+  @media print {
+    display: none;
+  }
 
   .cookie-box--inactive {
     opacity: 0;
