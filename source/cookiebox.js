@@ -1,9 +1,9 @@
 /**
  * Cookie Box, a simple Cookies Law information
  * https://github.com/r4fx/cookie-box
- * version: 2.0
+ * version: 2.1
  * release day: 16.03.2014
- * last update: 31.01.2016
+ * last update: 16.05.2017
  */
 
 ;(function () {
@@ -16,7 +16,7 @@
             boxContainer: '#cookie-box',
             cookiesPageURL: '/polityka-plikow-cookies/',
             textMessage: '<p>Strona używa plików cookies. <a data-cookie-box-url>Dowiedz się więcej</a> o celu ich używania i zmianie ustawień cookies w przeglądarce. Korzystając ze strony wyrażasz zgodę na używanie cookies. <a data-cookie-box-close>Rozumiem</a>.</p>',
-            position: 'bottom'
+            position: 'bottom-right'
         };
 
         var plugin = this;
