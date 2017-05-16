@@ -7,7 +7,9 @@ Możesz też wskazać własny kontener w którym powinien wygenerować się kod.
 Skrypt nie potrzbuje do działania jQuery.
 
 #### Ostatnie zmiany
-
+* [16.05.2017]
+    - Dodanie nowych opcji w pozycjonowaniu
+    
 * [17.04.2016]
     - Uproszczenie kodu
     
