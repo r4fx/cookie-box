@@ -35,7 +35,7 @@ Skrypt nie potrzbuje do działania jQuery.
             privacyPolicy: true,
             selfPosition: false,
             cookiesPageURL: '/polityka-plikow-cookies/',
-            position: 'bottom'
+            position: 'bottom-right'
         });
     </script>
     ```
@@ -49,7 +49,7 @@ Skrypt nie potrzbuje do działania jQuery.
 * RWD
 * SCSS
 * funkcja włącz/wyłącz
-* możliwość ustawienia pozycji góra/dół
+* możliwość ustawienia pozycji góra/dół/narożnik
 
 #### Dokumentacja
 
@@ -62,4 +62,4 @@ Skrypt nie potrzbuje do działania jQuery.
 | cookiesPageURL | link do podstrony o cookies (działa na klasie `.cookieBoxUrl`) | string | /polityka-plikow-cookies/ |
 | textMessage | Treść komunikatu | string | <p>Strona używa plików cookies. <a data-cookie-box-url>Dowiedz się więcej</a> o celu ich używania i zmianie ustawień cookies w przeglądarce. Korzystając ze strony wyrażasz zgodę na używanie cookies. <a data-cookie-box-close>Rozumiem</a>.</p> |
 | boxContainer| Id kontenera z komunikatem | string | #cookie-box |
-| position| Pozycjonowanie boxu (dostępne opcje: bottom, top) | string | bottom |
+| position| Pozycjonowanie boxu (dostępne opcje: bottom, bottom-right, bottom-left, top) | string | bottom-right |
