@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #cookie-box {
-  max-width: 100%;
+  max-width: 600px;
   position: relative;
   z-index: 700;
   font-family: arial, sans-serif;
@@ -9,15 +9,10 @@
   color: inherit;
   border: 1px solid #d2d2d2;
   padding: 20px;
-  margin: 15px 0;
+  margin: 15px;
   box-sizing: border-box;
   opacity: 1;
   max-height: 300px;
-  -webkit-transition: 350ms ease-in-out;
-  transition: 350ms ease-in-out;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  left: 50%;
 
   @media print {
     display: none;
@@ -30,6 +25,17 @@
 
   // Position
   &.cookie-box--bottom,
+  &.cookie-box--top {
+    -webkit-transition: 350ms ease-in-out;
+    transition: 350ms ease-in-out;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+  }
+
+  &.cookie-box--bottom,
+  &.cookie-box--bottom-right,
+  &.cookie-box--bottom-left,
   &.cookie-box--top {
     background-color: #fff;
     position: fixed;
@@ -48,6 +54,24 @@
 
     &.cookie-box--inactive {
       top: -100%;
+    }
+  }
+
+  &.cookie-box--bottom-right {
+    bottom: 0;
+    right: 0;
+
+    &.cookie-box--inactive {
+      bottom: -100%;
+    }
+  }
+
+  &.cookie-box--bottom-left {
+    bottom: 0;
+    left: 0;
+
+    &.cookie-box--inactive {
+      bottom: -100%;
     }
   }
 
