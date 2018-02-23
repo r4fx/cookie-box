@@ -15,7 +15,7 @@
             selfPosition: false,
             boxContainer: '#cookie-box',
             cookiesPageURL: '/polityka-plikow-cookies/',
-            textMessage: '<p>Strona używa plików cookies. <a data-cookie-box-url>Dowiedz się więcej</a> o celu ich używania i zmianie ustawień cookies w przeglądarce. Korzystając ze strony wyrażasz zgodę na używanie cookies. <a data-cookie-box-close>Rozumiem</a>.</p>',
+            textMessage: '<p>Nasz serwis wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub wykorzystanie. Więcej informacji można znaleźć w <a data-cookie-box-url>polityce prywatności</a> |  <a data-cookie-box-close>Akceptuję</a></p>',
             position: 'bottom-right'
         };
 
