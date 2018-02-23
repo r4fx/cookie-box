@@ -62,6 +62,6 @@ Skrypt nie potrzbuje do działania jQuery.
 | privacyPolicy | włącz/wyłącz | boolean | true |
 | selfPosition | Pozwala wykorzystać istniejący kontener, wstaw w dowolnym miejscu strony `<div id="cookie-box" class="cookie-box" data-cookie-box></div>`. | boolean | false |
 | cookiesPageURL | link do podstrony o cookies (działa na klasie `.cookieBoxUrl`) | string | /polityka-plikow-cookies/ |
-| textMessage | Treść komunikatu | string | Nasz serwis wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub wykorzystanie. Więcej informacji można znaleźć w polityce prywatności | Akceptuję |
+| textMessage | Treść komunikatu | string | Nasz serwis wykorzystuje pliki cookies. Korzystanie z witryny oznacza zgodę na ich zapis lub wykorzystanie. Więcej informacji można znaleźć w polityce prywatności. Akceptuję |
 | boxContainer| Id kontenera z komunikatem | string | #cookie-box |
 | position| Pozycjonowanie boxu (dostępne opcje: bottom, bottom-right, bottom-left, top) | string | bottom-right |
